@@ -10,11 +10,7 @@ A response object is defined as the output of ResponseBuilder.create_response()
 
 def default_handler(request):
     """ The default handler gets invoked if no handler is set for a request """
-    return r.create_response(message="boots.")
-
-@VoiceHandler(request_type="Amazon.StopIntent")
-def stop_request_handler(request):
-    return r.create_response(end_session=True)
+    return r.create_response(message="Drop a beat?")
 
 @VoiceHandler(request_type="LaunchRequest")
 def launch_request_handler(request):
@@ -35,4 +31,4 @@ def call_back_intent_handler(request):
     """
     You can insert arbitrary business logic code here
     """
-    return r.create_response(message="Let's spit some fire.")
+    return r.create_response(message="boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and boots and cats and ")

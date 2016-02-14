@@ -3,12 +3,6 @@
         {
             "slots": [],
             "intent": "DropBeat"
-        },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
-    }
-  ]
+        }
+    ]
 }
